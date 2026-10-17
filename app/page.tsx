@@ -22,17 +22,17 @@ export default async function LandingPage() {
         </p>
         <div className="hero-cta">
           {user ? (
-            <Link href="/app" className="btn btn-primary btn-lg">
+            <Link href="/app" className="btn btn-primary btn-cta">
               Go to tickets
             </Link>
           ) : (
             <>
-              <Link href="/signup" className="btn btn-primary btn-lg">
+              <Link href="/signup" className="btn btn-primary btn-cta">
                 Sign up — it&apos;s free
               </Link>
-              <Link href="/login" className="btn btn-ghost btn-lg">
-                Log in
-              </Link>
+              <p className="hero-login">
+                Already have an account? <Link href="/login">Log in</Link>
+              </p>
             </>
           )}
         </div>

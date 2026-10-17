@@ -332,18 +332,35 @@ textarea::placeholder {
 .hero-cta {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  align-items: stretch;
-  max-width: 320px;
-  margin: 0 auto;
+  align-items: center;
+  gap: 14px;
+}
+
+/* The one primary call-to-action on the landing page. */
+.btn-cta {
+  width: 100%;
+  max-width: 360px;
+  min-height: 58px;
+  padding: 0 32px;
+  font-size: 1.1875rem;
+  font-weight: 800;
+  box-shadow: 0 6px 20px rgba(59, 47, 201, 0.35);
 }
 
 @media (min-width: 560px) {
-  .hero-cta {
-    flex-direction: row;
-    justify-content: center;
-    max-width: none;
+  .btn-cta {
+    width: auto;
   }
+}
+
+.hero-login {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+
+.hero-login a {
+  font-weight: 600;
 }
 
 .ticket-preview {

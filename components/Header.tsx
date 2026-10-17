@@ -29,7 +29,7 @@ export default async function Header() {
               <Link href="/login" className="nav-link">
                 Log in
               </Link>
-              <Link href="/signup" className="btn btn-primary btn-sm">
+              <Link href="/signup" className="btn btn-ghost btn-sm">
                 Sign up
               </Link>
             </>
